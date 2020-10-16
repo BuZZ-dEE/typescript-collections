@@ -1,7 +1,7 @@
 [TypeScript Collections](https://github.com/typescript-collections/)
 ====================
 
-![Build Status](https://travis-ci.org/BuZZ-dEE/typescript-collections.svg)](https://travis-ci.org/BuZZ-dEE/typescript-collections)
+[![Build Status](https://travis-ci.org/BuZZ-dEE/typescript-collections.svg)](https://travis-ci.org/BuZZ-dEE/typescript-collections)
 [![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/npm/typescript-collections)](https://libraries.io/npm/typescript-collections)
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/BuZZ-dEE/typescript-collections)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat)](https://github.com/prettier/prettier)
