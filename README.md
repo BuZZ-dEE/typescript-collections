@@ -1,13 +1,17 @@
-[TypeScript Collections](https://github.com/basarat/typescript-collections/)
+[TypeScript Collections](https://github.com/typescript-collections/)
 ====================
+
+![Build Status](https://travis-ci.org/BuZZ-dEE/typescript-collections.svg)](https://travis-ci.org/BuZZ-dEE/typescript-collections)
+[![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/npm/typescript-collections)](https://libraries.io/npm/typescript-collections)
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/BuZZ-dEE/typescript-collections)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat)](https://github.com/prettier/prettier)
+[![npm bundle size](https://img.shields.io/bundlephobia/min/typescript-collections)](https://bundlephobia.com/result?p=typescript-collections)
+[![npm](https://img.shields.io/npm/v/typescript-collections)](https://www.npmjs.com/package/typescript-collections)
+[![NPM](https://img.shields.io/npm/l/typescript-collections)](https://github.com/BuZZ-dEE/typescript-collections/blob/master/LICENSE)
 
 It is a complete, fully tested data structure library written in TypeScript.
 
 This project uses TypeScript Generics so you need TS 0.9 and above.
-
-[This projects supports UMD (Universal Module Definition)](https://github.com/umdjs/umd)
-
-[![NPM](https://nodei.co/npm-dl/typescript-collections.png?height=3)](https://nodei.co/npm/typescript-collections/)
 
 Included data structures
 ---------------------

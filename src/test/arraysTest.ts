@@ -1,7 +1,8 @@
-import * as collections from '../lib/index';
 
 import * as assert from 'power-assert';
 import {expect} from 'chai';
+import * as collections from '../lib/index';
+
 
 describe('Arrays',
     function() {
