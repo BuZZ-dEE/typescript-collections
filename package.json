@@ -1,5 +1,5 @@
 {
-    "name": "collections-ts",
+    "name": "collections-typescript",
     "version": "2.0.0",
     "description": "A complete, fully tested data structure library written in TypeScript.",
     "main": "./dist/lib/index.js",
@@ -24,7 +24,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/BuZZ-dEE/collections-ts"
+        "url": "https://github.com/BuZZ-dEE/collections-typescript"
     },
     "keywords": [
         "typescript",
@@ -60,9 +60,9 @@
     ],
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/BuZZ-dEE/collections-ts/issues"
+        "url": "https://github.com/BuZZ-dEE/collections-typescript/issues"
     },
-    "homepage": "https://github.com/BuZZ-dEE/collections-ts",
+    "homepage": "https://github.com/BuZZ-dEE/collections-typescript",
     "devDependencies": {
         "@types/chai": "^4.0.4",
         "@types/mocha": "^8.0.3",

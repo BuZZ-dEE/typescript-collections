@@ -1,12 +1,12 @@
-# [TypeScript Collections](https://github.com/BuZZ-dEE/collections-ts/)
+# [TypeScript Collections](https://github.com/BuZZ-dEE/collections-typescript/)
 
-[![Build Status](https://travis-ci.org/BuZZ-dEE/collections-ts.svg)](https://travis-ci.org/BuZZ-dEE/collections-ts)
-[![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/npm/collections-ts)](https://libraries.io/npm/collections-ts)
-[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/BuZZ-dEE/collections-ts)
+[![Build Status](https://travis-ci.org/BuZZ-dEE/collections-typescript.svg)](https://travis-ci.org/BuZZ-dEE/collections-typescript)
+[![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/npm/collections-typescript)](https://libraries.io/npm/collections-typescript)
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/BuZZ-dEE/collections-typescript)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat)](https://github.com/prettier/prettier)
-[![npm bundle size](https://img.shields.io/bundlephobia/min/collections-ts)](https://bundlephobia.com/result?p=collections-ts)
-[![npm](https://img.shields.io/npm/v/collections-ts)](https://www.npmjs.com/package/collections-ts)
-[![NPM](https://img.shields.io/npm/l/collections-ts)](https://github.com/BuZZ-dEE/collections-ts/blob/master/LICENSE)
+[![npm bundle size](https://img.shields.io/bundlephobia/min/collections-typescript)](https://bundlephobia.com/result?p=collections-typescript)
+[![npm](https://img.shields.io/npm/v/collections-typescript)](https://www.npmjs.com/package/collections-typescript)
+[![NPM](https://img.shields.io/npm/l/collections-typescript)](https://github.com/BuZZ-dEE/collections-typescript/blob/master/LICENSE)
 
 It is a complete, fully tested data structure library written in TypeScript.
 
@@ -32,12 +32,12 @@ It also includes several functions for manipulating arrays.
 
 ## Usage
 
-`npm install collections-ts --save`
+`npm install collections-typescript --save`
 
 ES6 `import ... from`
 
 ```typescript
-import * as Collections from 'collections-ts';
+import * as Collections from 'collections-typescript';
 ```
 
 ![](https://zippy.gfycat.com/SeriousPointlessCob.gif)
@@ -48,7 +48,7 @@ The compiler will ensure that the collections contain the correct elements.
 ## Example
 
 ```typescript
-import * as Collections from 'collections-ts';
+import * as Collections from 'collections-typescript';
 
 var mySet = new Collections.Set<number>();
 mySet.add(123);
@@ -66,7 +66,7 @@ console.log(myQueue.dequeue()); // prints 2
 
 ## Typings resolution
 
-Remember to set `"moduleResolution": "node"`, so TypeScript compiler can resolve typings in the `node_modules/collections-ts` directory.
+Remember to set `"moduleResolution": "node"`, so TypeScript compiler can resolve typings in the `node_modules/collections-typescript` directory.
 
 ## A note on Equality
 
@@ -78,7 +78,7 @@ This is why the implementation for these data structures uses the item's toStrin
 A simple function is provided for you when you need a quick toString that uses all properties. E.g:
 
 ```typescript
-import * as Collections from 'collections-ts';
+import * as Collections from 'collections-typescript';
 
 class Car {
   constructor(
@@ -104,7 +104,7 @@ Output:
 ## A Sample on Dictionary
 
 ```typescript
-import * as Collections from 'collections-ts';
+import * as Collections from 'collections-typescript';
 
 class Person {
   constructor(
