@@ -20,7 +20,7 @@ describe('Factory Dictionary', function () {
     expect(dict.setDefault(key, defaultValue)).to.not.equal(defaultValue);
   });
 
-  it("Automatically creates a key with a default value if it doesn't exist", function () {
+  it('Automatically creates a key with a default value if it doesn\'t exist', function () {
     let key: string = 'a';
 
     expect(dict.getValue(key)).to.deep.equal(defaultValue);

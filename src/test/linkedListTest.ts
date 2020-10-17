@@ -106,7 +106,7 @@ describe('Linked List', function () {
     expect(list.equals([1, 2])).equals(false);
   });
 
-  it("Doesn't insert elements to invalid indexes", function () {
+  it('Doesn\'t insert elements to invalid indexes', function () {
     expect(list.add(0, 1)).equals(false);
     expect(list.size() === 0).equals(true);
     expect(list.first()).equals(undefined);
@@ -262,7 +262,7 @@ describe('Linked List', function () {
     expect(list.size() === elems - 1).equals(true);
   });
 
-  it("Doesn't remove non existing elements", function () {
+  it('Doesn\'t remove non existing elements', function () {
     expect(list.remove(5)).equals(false);
     expect(list.size()).equals(0);
     list.add(1);
