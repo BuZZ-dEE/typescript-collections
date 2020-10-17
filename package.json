@@ -10,7 +10,6 @@
         "tsc": "tsc",
         "build": "npm run clean && npm run lint && npm run tsc",
         "test": "mocha -r ts-node/register src/test/*Test.ts",
-        "testOld": "mocha ./dist/test/*Test.ts",
         "cover": "istanbul cover ./node_modules/mocha/bin/_mocha -- ./dist/test/*.js",
         "publish_to_npm": "npm publish",
         "all": "npm run build && npm run test && npm run cover"

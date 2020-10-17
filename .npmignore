@@ -1,5 +1,6 @@
 .settings/
 .vscode/
+.history
 coverage/
 dist/test/
 examples/
