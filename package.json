@@ -83,7 +83,7 @@
         "lint-staged": "^10.4.1",
         "mkdirp": "^0.5.1",
         "mocha": "^3.5.3",
-        "power-assert": "^1.4.4",
+        "power-assert": "^1.6.1",
         "prettier": "^2.1.2",
         "rimraf": "^2.5.4",
         "source-map-support": "^0.4.2",
