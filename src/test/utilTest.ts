@@ -3,22 +3,22 @@ import * as Collections from '../lib/index';
 import * as assert from 'power-assert';
 import {expect} from 'chai';
 
-describe('util',
-    function () {
+describe('util', function () {
+  class Car {
+    constructor(
+      public company: string,
+      public type: string,
+      public year: number
+    ) {}
+    toString() {
+      // Short hand. Adds each own property
+      return Collections.util.makeString(this);
+    }
+  }
 
-        class Car {
-            constructor(public company: string, public type: string, public year: number) {
-            }
-            toString() {
-                // Short hand. Adds each own property
-                return Collections.util.makeString(this);
-            }
-        }
+  it('makeString function works', function () {
+    const carStringified = new Car('BMW', 'A', 2016).toString();
 
-        it('makeString function works',
-            function () {
-                let carStringified = new Car('BMW', 'A', 2016).toString();
-
-                assert.equal(carStringified, '{company:BMW,type:A,year:2016}');
-            });
-    });
+    assert.equal(carStringified, '{company:BMW,type:A,year:2016}');
+  });
+});

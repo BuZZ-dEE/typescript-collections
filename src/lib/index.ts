@@ -5,7 +5,7 @@
 // Orginal javascript code was by Mauricio Santos
 //
 import * as _arrays from './arrays';
-export var arrays = _arrays;
+export let arrays = _arrays;
 export {default as Bag} from './Bag';
 export {default as BSTree} from './BSTree';
 export {default as BSTreeKV} from './BSTreeKV';
@@ -22,4 +22,4 @@ export {default as Set} from './Set';
 export {default as Stack} from './Stack';
 export {default as MultiRootTree} from './MultiRootTree';
 import * as _util from './util';
-export var util = _util;
+export let util = _util;
