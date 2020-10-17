@@ -1,20 +1,18 @@
-[TypeScript Collections](https://github.com/typescript-collections/)
-====================
+# [TypeScript Collections](https://github.com/BuZZ-dEE/ts-collections/)
 
-[![Build Status](https://travis-ci.org/BuZZ-dEE/typescript-collections.svg)](https://travis-ci.org/BuZZ-dEE/typescript-collections)
-[![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/npm/typescript-collections)](https://libraries.io/npm/typescript-collections)
-[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/BuZZ-dEE/typescript-collections)
+[![Build Status](https://travis-ci.org/BuZZ-dEE/ts-collections.svg)](https://travis-ci.org/BuZZ-dEE/ts-collections)
+[![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/npm/ts-collections)](https://libraries.io/npm/ts-collections)
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/BuZZ-dEE/ts-collections)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat)](https://github.com/prettier/prettier)
-[![npm bundle size](https://img.shields.io/bundlephobia/min/typescript-collections)](https://bundlephobia.com/result?p=typescript-collections)
-[![npm](https://img.shields.io/npm/v/typescript-collections)](https://www.npmjs.com/package/typescript-collections)
-[![NPM](https://img.shields.io/npm/l/typescript-collections)](https://github.com/BuZZ-dEE/typescript-collections/blob/master/LICENSE)
+[![npm bundle size](https://img.shields.io/bundlephobia/min/ts-collections)](https://bundlephobia.com/result?p=ts-collections)
+[![npm](https://img.shields.io/npm/v/ts-collections)](https://www.npmjs.com/package/ts-collections)
+[![NPM](https://img.shields.io/npm/l/ts-collections)](https://github.com/BuZZ-dEE/ts-collections/blob/master/LICENSE)
 
 It is a complete, fully tested data structure library written in TypeScript.
 
 This project uses TypeScript Generics so you need TS 0.9 and above.
 
-Included data structures
----------------------
+## Included data structures
 
 - Linked List
 - Dictionary - [Example](#a-sample-on-dictionary)
@@ -32,44 +30,25 @@ Included data structures
 
 It also includes several functions for manipulating arrays.
 
-Usage
---------------------
+## Usage
 
-`npm install typescript-collections --save`
+`npm install ts-collections --save`
 
 ES6 `import ... from`
 
 ```typescript
-import * as Collections from 'typescript-collections';
-```
-
-or TypeScript `import ... require`
-
-```typescript
-import Collections = require('typescript-collections');
-```
-
-or JavaScript `var ... require`
-
-```js
-var Collections = require('typescript-collections');
+import * as Collections from 'ts-collections';
 ```
 
 ![](https://zippy.gfycat.com/SeriousPointlessCob.gif)
 
-Visual Studio or other TypeScript IDE, will provide you with complete Intellisense (autocomplete) for your types.
+Visual Studio Code or other TypeScript IDE, will provide you with complete Intellisense (autocomplete) for your types.
 The compiler will ensure that the collections contain the correct elements.
 
-A sample Visual Studio project is in the demo folder.
-
-Also available on NuGet : <http://www.nuget.org/packages/typescript.collections/>
-Thanks to <https://github.com/georgiosd>
-
-Example
---------------------
+## Example
 
 ```typescript
-import * as Collections from 'typescript-collections';
+import * as Collections from 'ts-collections';
 
 var mySet = new Collections.Set<number>();
 mySet.add(123);
@@ -85,44 +64,35 @@ console.log(myQueue.dequeue()); // prints 1
 console.log(myQueue.dequeue()); // prints 2
 ```
 
-Typings resolution
--------------------
+## Typings resolution
 
-Remember to set `"moduleResolution": "node"`, so TypeScript compiler can resolve typings in the `node_modules/typescript-collections` directory.
+Remember to set `"moduleResolution": "node"`, so TypeScript compiler can resolve typings in the `node_modules/ts-collections` directory.
 
-In browser usage
--------------------
-
-You should include `umd.js` or `umd.min.js` from `dist/lib/` directory.
-
-```html
-<script src="[server public path]/typescript-collections/dist/lib/umd.min.js"></script>
-```
-
-A note on Equality
--------------------
+## A note on Equality
 
 Equality is important for hashing (e.g. dictionary / sets). Javascript only allows strings to be keys for the base dictionary {}.
 This is why the implementation for these data structures uses the item's toString() method.
 
-makeString utility function (aka. JSON.stringify)
--------------------
+## makeString utility function (aka. JSON.stringify)
 
 A simple function is provided for you when you need a quick toString that uses all properties. E.g:
 
 ```typescript
-import * as Collections from 'typescript-collections';
+import * as Collections from 'ts-collections';
 
 class Car {
-    constructor(public company: string, public type: string, public year: number) {
-    }
-    toString() {
-        // Short hand. Adds each own property
-        return Collections.util.makeString(this);
-    }
+  constructor(
+    public company: string,
+    public type: string,
+    public year: number
+  ) {}
+  toString() {
+    // Short hand. Adds each own property
+    return Collections.util.makeString(this);
+  }
 }
 
-console.log(new Car("BMW", "A", 2016).toString());
+console.log(new Car('BMW', 'A', 2016).toString());
 ```
 
 Output:
@@ -131,49 +101,60 @@ Output:
 {company:BMW,type:A,year:2016}
 ```
 
-A Sample on Dictionary
----------------------
+## A Sample on Dictionary
 
 ```typescript
-import * as Collections from 'typescript-collections';
+import * as Collections from 'ts-collections';
 
 class Person {
-    constructor(public name: string, public yearOfBirth: number,public city?:string) {
-    }
-    toString() {
-        return this.name + "-" + this.yearOfBirth; // City is not a part of the key.
-    }
+  constructor(
+    public name: string,
+    public yearOfBirth: number,
+    public city?: string
+  ) {}
+  toString() {
+    return this.name + '-' + this.yearOfBirth; // City is not a part of the key.
+  }
 }
 
 class Car {
-    constructor(public company: string, public type: string, public year: number) {
-    }
-    toString() {
-        // Short hand. Adds each own property
-        return Collections.util.makeString(this);
-    }
+  constructor(
+    public company: string,
+    public type: string,
+    public year: number
+  ) {}
+  toString() {
+    // Short hand. Adds each own property
+    return Collections.util.makeString(this);
+  }
 }
 var dict = new Collections.Dictionary<Person, Car>();
-dict.setValue(new Person("john", 1970,"melbourne"), new Car("honda", "city", 2002));
-dict.setValue(new Person("gavin", 1984), new Car("ferrari", "F50", 2006));
-console.log("Orig");
+dict.setValue(
+  new Person('john', 1970, 'melbourne'),
+  new Car('honda', 'city', 2002)
+);
+dict.setValue(new Person('gavin', 1984), new Car('ferrari', 'F50', 2006));
+console.log('Orig');
 console.log(dict);
 
 // Changes the same john, since city is not part of key
-dict.setValue(new Person("john", 1970, "sydney"), new Car("honda", "accord", 2006));
+dict.setValue(
+  new Person('john', 1970, 'sydney'),
+  new Car('honda', 'accord', 2006)
+);
 // Add a new john
-dict.setValue(new Person("john", 1971), new Car("nissan", "micra", 2010));
-console.log("Updated");
+dict.setValue(new Person('john', 1971), new Car('nissan', 'micra', 2010));
+console.log('Updated');
 console.log(dict);
 
 // Showing getting / setting a single car:
-console.log("Single Item");
-var person = new Person("john", 1970);
-console.log("-Person:");
+console.log('Single Item');
+var person = new Person('john', 1970);
+console.log('-Person:');
 console.log(person);
 
 var car = dict.getValue(person);
-console.log("-Car:");
+console.log('-Car:');
 console.log(car.toString());
 ```
 
@@ -198,8 +179,7 @@ john-1970
 {company:honda,type:accord,year:2006}
 ```
 
-Default Dictionary
----------------------
+## Default Dictionary
 
 Also known as `Factory Dictionary` [[ref.](https://github.com/basarat/typescript-collections/pull/47)]
 
@@ -207,14 +187,12 @@ If a key doesn't exist, the Default Dictionary automatically creates it with `se
 
 Default Dictionary is a @michaelneu contribution which copies Python's [defaultDict](https://docs.python.org/2/library/collections.html#collections.defaultdict).
 
-Development and contributions
---------------------
+## Development and contributions
 
 Compile, test and check coverage
 `npm run all`
 
-Supported platforms
---------------------
+## Supported platforms
 
 - Every desktop and mobile browser (including IE6)
 - Node.js
@@ -223,8 +201,7 @@ Supported platforms
 If it supports JavaScript, it probably supports this library.
 ```
 
-Contact
---------------------
+## Contact
 
 bas AT basarat.com
 
