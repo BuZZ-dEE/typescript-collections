@@ -1,5 +1,5 @@
 {
-    "name": "collections-typescript",
+    "name": "@buzz-dee/collections-typescript",
     "version": "2.0.1",
     "description": "A complete, fully tested data structure library written in TypeScript.",
     "main": "./dist/lib/index.js",
