@@ -176,7 +176,7 @@ describe('Heap', function () {
 
   it('Contains inserted elements', function () {
     createHeap1();
-    for (let i = 0; i < 4; i++) {
+    for (var i = 0; i < 4; i++) {
       expect(heap.contains(i)).equals(true);
     }
     expect(heap.contains(i)).equals(false);

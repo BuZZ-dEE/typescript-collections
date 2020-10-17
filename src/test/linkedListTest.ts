@@ -128,7 +128,7 @@ describe('Linked List', function () {
 
   it('Inserts elements at the first index', function () {
     for (let j = 0; j < elems; j++) {
-      for (let i = 0; i < j; i++) {
+      for (var i = 0; i < j; i++) {
         list.add(i);
       }
       list.add(-i, 0);
